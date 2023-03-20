@@ -13,6 +13,10 @@ if ($host.Name -eq 'ConsoleHost')
     Import-Module PSReadLine
 }
 
+# Alias
+New-Alias mongo mongosh
+
+# Function shortcuts
 Function repo 
 {
     Set-Location -Path C:\repo
